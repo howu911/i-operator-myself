@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: i-operator-myself
 repo: github.com/howu911/i-operator-myself
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: crd.lixueduan.com
+  group: core
+  kind: Application
+  path: github.com/howu911/i-operator-myself/api/v1
+  version: v1
 version: "3"
